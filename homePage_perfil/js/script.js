@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
       return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     }
   
-   
     function removerMensagemErro(campo) {
   
       campo.classList.remove("campo-invalido-contato");

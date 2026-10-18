@@ -18,8 +18,13 @@
         }
         })();
 
-      // Remove o login e redireciona para a página inicial
+      // alerta antes de sair da conta e redireciona para a página princiapl
         function sairDaConta() {
-        localStorage.removeItem('usuarioLogado');
-        window.location.href = '../homePage/index.html';
+            const desejaSair = confirm("Tem certeza que deseja sair da sua conta?");
+            
+            if (!desejaSair) {
+                return; 
+            }
+            localStorage.removeItem('usuarioLogado');
+            window.location.href = '../homePage_perfil/indexPerfil.html';
         }

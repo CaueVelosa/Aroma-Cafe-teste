@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style/produtos.css">
+    <title>Produtos | Aroma Café</title>
 </head>
 <body>
-    <p> TESTE </p>
+    <aside class="dashboard">
+        <div class="logo">
+            <h2>Aroma Café</h2>
+            <p>Administração</p>
+        </div>
+        <nav>
+            <li><a href="./perfilADM.html" >Visão Geral</a></li>
+            <li><a href="./produtos.html" class="ativo">Produtos</a></li>
+            <li><a href="./gatos.html">Gatos</a></li>
+            <li><a href="./notificacao.html">Notificações</a></li>
+            <li><a href="./configuracao.html">Configurações</a></li>
+        </nav>
+        <div class="btn-sair" id="botaoSair" onclick="sairDaConta()" role="button" tabindex="0">
+            <p class="botaoSair">Sair da Conta</p>
+            <img src="./image/exit.png" alt="Ícone para sair da conta" class="icone">
+        </div>
+    </aside>
+    
+    <main class="paginaInicial">
+        <header>
+            <small>terça-feira, 06 de outubro</small>
+            <h1>Produtos e estoque</h1>
+            <p class="descricao"> Monitore os produtos, ingredientes, estoque e fornecedores</p>
+        </header>
+
+        <section class="container1">
+                <div class="painel">
+                    <div class="tabs" role="tablist">
+                        <button class="tab" role="tab" aria-selected="true" data-t="prod">
+                        Produtos
+                        </button>
+                        <button class="tab" role="tab" aria-selected="false" data-t="ing">
+                        Ingredientes
+                        </button>
+                        <button class="tab" role="tab" aria-selected="false" data-t="forn">
+                        Fornecedores
+                        </button>
+                    </div>
+
+                    <div class="ferramentas" id="ferramentas">
+                        <input type="search" id="busca" placeholder="Buscar produto" aria-label="Buscar produto"/>
+                        <button class="chip" id="soAtencao" aria-pressed="false"> Novo Produto </button>
+                        <button class="btn pri" id="addCtx" style="display: none"></button>
+                    </div>
+
+                    <div class="lista-produto"></div>
+                </div>
+        </section>
+
+    </main>
+
+
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>

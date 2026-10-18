@@ -5,7 +5,7 @@ document.querySelectorAll('[data-modal]').forEach(el => {
     el.addEventListener('keydown', e => { if (e.key === 'Enter') abrir(); });
 });
 
-// fechar: botões ×/aancelar e clique no fundo
+// botão para fechar os modais
 document.querySelectorAll('.modal').forEach(m => {
     m.querySelectorAll('.fechar').forEach(b => b.addEventListener('click', () => m.close()));
     m.addEventListener('click', e => { if (e.target === m) m.close(); });
@@ -47,8 +47,14 @@ cpf.addEventListener('input', () => cpf.setCustomValidity(''));
 tratarEnvio('formProduto', 'modalProduto', 'Produto salvo com sucesso');
 tratarEnvio('formAdocao', 'modalAdocao', 'Adoção registrada com sucesso');
 
-// sair da conta 
+
+// alerta antes de sair da conta
 function sairDaConta() {
+    const desejaSair = confirm("Tem certeza que deseja sair da sua conta administrativa?");
+    
+    if (!desejaSair) {
+        return; 
+    }
     localStorage.removeItem('usuarioLogado');
     window.location.href = '../homePage_perfil/indexPerfil.html';
 }
