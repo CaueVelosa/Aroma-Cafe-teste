@@ -20,3 +20,40 @@
 	Botão de nova adoção é a mesma coisa
 	Botão de cadastrar gato e agendar reserva não funcionam
 	Botão de sair da conta administrativa funciona
+
+- Pagina inicial sem conta/com conta - 
+	Logo do site leva para o inicio
+	Barra de pesquisa recebe valores mas não funciona para pesquisar
+	Botão de cardápio leva ao cardápio
+	As 3 imagens da sessão de cardápio levam a suas respectivas categorias de itens
+	Sessão de fale conosco recebe dados, confirma se os capôs estão preenchidos corretamente se sim retorna mensagem de confirmação, se não pede para preencher o campo c	orretamente
+	Todos os botões do rodapé levam ao inicio da pagina menos o Mural dos gatos que leva a sua respectiva pagina
+	-
+- Pagina de mural dos gatos - 
+	Todas as fotos de gato funcionam como botão e levam para seus respectivos gatos
+	Botões do rodapé levam ao inicio da pagina
+	Logo leva a pagina inicial
+	Cardápio abre as 3 categorias possíveis
+
+- Pagina de reservas - 
+	Os campos da parte de reservas não conferem se o email e a data inserida é valida
+	Botões do rodapé levam ao inicio da pagina
+
+- Pagina de cardápio - 
+	Quando clica no botão aparece 3 categorias, Cafés especiais, Bebidas Geladas e Doces e acompanhamentos, cada botão leva a pagina da categoria escolhida
+	Todos os itens do cardápio funcionam
+	Botão de adicionar no carrinho não faz nada
+	Logo leva a pagina inicial
+	Botão do carrinho leva ao carrinho
+	Botões do rodapé levam ao inicio da pagina
+
+- Pagina de Carrinho - 
+	Botão de continuar comprando leva ao cardápio novamente
+	Botões do rodapé levam ao inicio da pagina
+	Campo de cupom recebe valor mas não retorna nada
+	Botões de adicionar e retirar quantidade são clicáveis mas não fazem nada
+	Botões de excluir produtos do carrinho não funcionam
+	Botão de esvaziar carrinho não funcionam
+	Botão de reserva leva a uma pagina inexistente
+	
+	
